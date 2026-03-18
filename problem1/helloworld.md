@@ -19,6 +19,11 @@ int main()
 ```
 ## scanf("%[^\n]%*c", s); wondering whats the format specifer of scanf is 
 means that all the characters entered as the input, including the spaces, until we hit the enter button are stored in the variable, name; provided we allocate sufficient memory for the variable.
+
+## Here, [] is the scanset character. ^\n stands for taking input until a newline isn't encountered
+## * is used to indicate don’t assign value to name until you hit enter or scanf encounters ‘\n’.
+
+Thanks,
 If we input something like ‘Welcome to Programming’, then we see that the output for this code would be as following:
 
 **Hello, World!**
