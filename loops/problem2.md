@@ -1,4 +1,5 @@
 <img width="717" height="685" alt="image" src="https://github.com/user-attachments/assets/bcbb155d-31f6-4dab-b654-0bd76b2a7d2a" />
+
 ```c
 
 #include <stdio.h>
@@ -39,5 +40,4 @@ int main()
     }
     return 0;
 }
-
 ```
