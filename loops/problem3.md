@@ -1,5 +1,7 @@
 <img width="744" height="614" alt="image" src="https://github.com/user-attachments/assets/87d9501d-f939-4c62-9c49-0e660ed59277" />
+
 ```c
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
