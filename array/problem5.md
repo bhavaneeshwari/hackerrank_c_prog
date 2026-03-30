@@ -21,8 +21,8 @@ int main()
     int total_number_of_shelves;
     scanf("%d", &total_number_of_shelves);
     
-    total_number_of_books = (int*)calloc(total_number_of_shelves,sizeof(int));
-    total_number_of_pages  = (int**)calloc(total_number_of_shelves,sizeof(int*));
+    total_number_of_books = (int*)calloc(total_number_of_shelves,sizeof(int));/*firstly its 1d array since tnb is pointer to array itself , we typecast int*, then this array holds the number of book in each shelf*/
+    total_number_of_pages  = (int**)calloc(total_number_of_shelves,sizeof(int*));/*2d array here rows are shelf, which is pointer to shelf so we have int* in sizeof operator , then int** bcz of 2d array, here we didnt care about column part, which represents the book, which may be vary*/
     
     int total_number_of_queries;
     scanf("%d", &total_number_of_queries);
@@ -37,8 +37,10 @@ int main()
              */
             int x, y;
             scanf("%d %d", &x, &y);
-            
-
+            total_number_of_books[x]++; /* here book count incr as we gonna add thats our query 1 in shelf x */
+            total_number_of_pages[x]= (int*)realloc(total_number_of_pages[x],total_number_of_books[x]*sizeof(int));
+            /* here we update the row(shelf) size , based on no of book in book array*/
+            total_number_of_pages[x][total_number_of_books[x]-1]=y; 
         } else if (type_of_query == 2) {
             int x, y;
             scanf("%d %d", &x, &y);
