@@ -1,6 +1,6 @@
 <img width="808" height="718" alt="image" src="https://github.com/user-attachments/assets/9890e36e-b9d2-4413-b930-ab5249e167ab" />
 
-``c
+```c
 
 #include <stdio.h>
 #include <string.h>
@@ -27,4 +27,4 @@ int main() {
   printf("%d",sum);
     return 0;
 }
-``
+```
